@@ -88,6 +88,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "SocialNetwork.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SocialNetwork.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SocialNetwork.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SocialNetwork.BLL.dll": {}
+        }
+      },
+      "SocialNetwork.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SocialNetwork.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SocialNetwork.DAL.dll": {}
+        }
       }
     }
   },
@@ -216,10 +239,22 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "SocialNetwork.BLL/1.0.0": {
+      "type": "project",
+      "path": "../SocialNetwork.BLL/SocialNetwork.BLL.csproj",
+      "msbuildProject": "../SocialNetwork.BLL/SocialNetwork.BLL.csproj"
+    },
+    "SocialNetwork.DAL/1.0.0": {
+      "type": "project",
+      "path": "../SocialNetwork.DAL/SocialNetwork.DAL.csproj",
+      "msbuildProject": "../SocialNetwork.DAL/SocialNetwork.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "SocialNetwork.BLL >= 1.0.0",
+      "SocialNetwork.DAL >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -254,7 +289,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ErminKujovic\\Desktop\\SocialNetworkGit\\SocialNetwork\\SocialNetwork.BLL\\SocialNetwork.BLL.csproj": {
+              "projectPath": "C:\\Users\\ErminKujovic\\Desktop\\SocialNetworkGit\\SocialNetwork\\SocialNetwork.BLL\\SocialNetwork.BLL.csproj"
+            },
+            "C:\\Users\\ErminKujovic\\Desktop\\SocialNetworkGit\\SocialNetwork\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj": {
+              "projectPath": "C:\\Users\\ErminKujovic\\Desktop\\SocialNetworkGit\\SocialNetwork\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

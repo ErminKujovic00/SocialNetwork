@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SocialNetwork.BLL/1.0.0": {
+        "dependencies": {
+          "SocialNetwork.DAL": "1.0.0"
+        },
+        "runtime": {
+          "SocialNetwork.BLL.dll": {}
+        }
+      },
+      "SocialNetwork.DAL/1.0.0": {
+        "runtime": {
+          "SocialNetwork.DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SocialNetwork.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SocialNetwork.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
