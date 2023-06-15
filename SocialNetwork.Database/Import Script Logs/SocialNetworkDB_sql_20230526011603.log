@@ -1,0 +1,12 @@
+5/26/2023 3:16:03 PM	This log contains information about the import operation of the script 'SocialNetworkDB.sql' into project 'SocialNetwork.Database' on computer 'API2464' by user'ErminKujovic.
+5/26/2023 3:16:03 PM	Started importing file: C:\Users\ErminKujovic\Desktop\SocialNetwork\SocialNetworkDB.sql 
+5/26/2023 3:16:03 PM	File name C:\Users\ErminKujovic\Desktop\SocialNetwork\SocialNetworkDB.sql (size: 2844)
+5/26/2023 3:16:03 PM	Parsing import script
+5/26/2023 3:16:04 PM	Total number of batches in script: 1
+5/26/2023 3:16:04 PM	Total number of statements in script: 8
+5/26/2023 3:16:04 PM	The script was successfully imported into the project.
+5/26/2023 3:16:04 PM	Analyzing schema objects...
+5/26/2023 3:16:04 PM	Scanning project for duplicate elements
+5/26/2023 3:16:04 PM	Finished duplicate element processing
+5/26/2023 3:16:04 PM	A summary of the import was saved to the following location: C:\Users\ErminKujovic\Desktop\SocialNetwork\SocialNetwork.Database\Import Script Logs\SocialNetworkDB_sql_20230526011603.log
+5/26/2023 3:16:04 PM	Click Finish to continue...

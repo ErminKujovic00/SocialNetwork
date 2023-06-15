@@ -1,0 +1,12 @@
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\bin\Debug\net6.0\SocialNetwork.DAL.deps.json
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\bin\Debug\net6.0\SocialNetwork.DAL.dll
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\bin\Debug\net6.0\SocialNetwork.DAL.pdb
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\obj\Debug\net6.0\SocialNetwork.DAL.csproj.AssemblyReference.cache
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\obj\Debug\net6.0\SocialNetwork.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\obj\Debug\net6.0\SocialNetwork.DAL.AssemblyInfoInputs.cache
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\obj\Debug\net6.0\SocialNetwork.DAL.AssemblyInfo.cs
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\obj\Debug\net6.0\SocialNetwork.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\obj\Debug\net6.0\SocialNetwork.DAL.dll
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\obj\Debug\net6.0\refint\SocialNetwork.DAL.dll
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\obj\Debug\net6.0\SocialNetwork.DAL.pdb
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.DAL\obj\Debug\net6.0\ref\SocialNetwork.DAL.dll

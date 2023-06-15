@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "8hUouWCl6upxTqLozxhTgAuHU3aUWgDudbjVmXENnQgH4zd//WhnoptPE0ilzt90fT3TGSijJXKB2Ahu61vyPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ErminKujovic\\Desktop\\SocialNetworkGit\\SocialNetwork\\SocialNetwork\\SocialNetwork.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ErminKujovic\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ErminKujovic\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ErminKujovic\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\ErminKujovic\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\ErminKujovic\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\ErminKujovic\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

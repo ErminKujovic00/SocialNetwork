@@ -1,0 +1,15 @@
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\bin\Debug\net6.0\SocialNetwork.BLL.deps.json
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\bin\Debug\net6.0\SocialNetwork.BLL.dll
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\bin\Debug\net6.0\SocialNetwork.BLL.pdb
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\bin\Debug\net6.0\SocialNetwork.DAL.dll
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\bin\Debug\net6.0\SocialNetwork.DAL.pdb
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\SocialNetwork.BLL.csproj.AssemblyReference.cache
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\SocialNetwork.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\SocialNetwork.BLL.AssemblyInfoInputs.cache
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\SocialNetwork.BLL.AssemblyInfo.cs
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\SocialNetwork.BLL.csproj.CoreCompileInputs.cache
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\SocialNetwork.BLL.csproj.CopyComplete
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\SocialNetwork.BLL.dll
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\refint\SocialNetwork.BLL.dll
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\SocialNetwork.BLL.pdb
+C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\ref\SocialNetwork.BLL.dll
