@@ -58,11 +58,14 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\Comments.sql" />
-    <Build Include="dbo\Tables\Friends.sql" />
     <Build Include="dbo\Tables\Posts.sql" />
     <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\Tables\Comment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\UserSeed.sql" />
   </ItemGroup>
 </Project>

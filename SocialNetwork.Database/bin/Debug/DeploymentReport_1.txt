@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       [dbo].[Comments]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Comments].[NumberOfLIkes] on table [dbo].[Comments] must be added, but the column has no default value
+         and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+
+** User actions
+     Recreate table
+       [dbo].[Comments] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[Fk_Posts_Comments_PostId] (Foreign Key)
+     Create
+       [dbo].[Fk_Posts_Comments_PostId] (Foreign Key)
+
+The column [dbo].[Comments].[NumberOfLIkes] on table [dbo].[Comments] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

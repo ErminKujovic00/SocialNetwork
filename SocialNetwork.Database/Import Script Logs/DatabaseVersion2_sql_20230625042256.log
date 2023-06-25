@@ -1,0 +1,17 @@
+6/25/2023 6:22:56 PM	This log contains information about the import operation of the script 'DatabaseVersion2.sql' into project 'SocialNetwork.Database' on computer 'API2464' by user'ErminKujovic.
+6/25/2023 6:22:56 PM	Started importing file: C:\Users\ErminKujovic\Desktop\SocialNetworkGit\DatabaseVersion2.sql 
+6/25/2023 6:22:56 PM	File name C:\Users\ErminKujovic\Desktop\SocialNetworkGit\DatabaseVersion2.sql (size: 2166)
+6/25/2023 6:22:56 PM	Parsing import script
+6/25/2023 6:22:56 PM	Total number of batches in script: 1
+6/25/2023 6:22:56 PM	Total number of statements in script: 5
+6/25/2023 6:22:56 PM	The script was successfully imported into the project.
+6/25/2023 6:22:56 PM	Analyzing schema objects...
+6/25/2023 6:22:56 PM	Scanning project for duplicate elements
+6/25/2023 6:22:56 PM	Element 'Comment' was merged into the existing script: 'C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.Database\dbo\Tables\Comment.sql'.
+6/25/2023 6:22:56 PM	Element 'Post' was merged into the existing script: 'C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.Database\dbo\Tables\Posts.sql'.
+6/25/2023 6:22:56 PM	Element 'User' was merged into the existing script: 'C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.Database\dbo\Tables\User.sql'.
+6/25/2023 6:22:56 PM	Element 'Fk_Post_Comment_PostId' was merged into the existing script: 'C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.Database\dbo\Tables\Comment.sql'.
+6/25/2023 6:22:56 PM	Element 'Fk_User_Post_UserId' was merged into the existing script: 'C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.Database\dbo\Tables\Posts.sql'.
+6/25/2023 6:22:56 PM	Finished duplicate element processing
+6/25/2023 6:22:56 PM	A summary of the import was saved to the following location: C:\Users\ErminKujovic\Desktop\SocialNetworkGit\SocialNetwork\SocialNetwork.Database\Import Script Logs\DatabaseVersion2_sql_20230625042256.log
+6/25/2023 6:22:56 PM	Click Finish to continue...

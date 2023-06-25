@@ -1,6 +1,10 @@
-﻿-- Table dbo.Posts
+﻿-- Table dbo.Post
+-- Table dbo.Post
+-- Table dbo.Post
+-- Table dbo.Post
+-- Table dbo.Post
 create table
-	[dbo].[Posts]
+	[dbo].[Post]
 (
 	[PostId] uniqueidentifier not null
 	, [PostDate] datetime2(7) not null
@@ -9,18 +13,21 @@ create table
 	, [PostLikes] int not null
 	, [PostComments] int not null
 	, [UserId] uniqueidentifier not null
-	, [FriendId] uniqueidentifier not null
 ,
-constraint [Pk_Posts_PostId] primary key clustered
+constraint [Pk_Post_PostId] primary key clustered
 (
 	[PostId] asc
 )
 );
 GO
--- Relationship Fk_User_Posts_UserId
-alter table [dbo].[Posts]
-add constraint [Fk_User_Posts_UserId] foreign key ([UserId]) references [dbo].[User] ([UserId]);
+-- Relationship Fk_User_Post_UserId
+-- Relationship Fk_User_Post_UserId
+-- Relationship Fk_User_Post_UserId
+-- Relationship Fk_User_Post_UserId
+-- Relationship Fk_User_Post_UserId
+alter table [dbo].[Post]
+add constraint [Fk_User_Post_UserId] foreign key ([UserId]) references [dbo].[User] ([UserId]);
 GO
--- Relationship Fk_Friends_Posts_FriendId
-alter table [dbo].[Posts]
-add constraint [Fk_Friends_Posts_FriendId] foreign key ([FriendId]) references [dbo].[Friends] ([FriendId]);
+-- Relationship Fk_Friends_Post_FriendId
+/*alter table [dbo].[Post]
+add constraint [Fk_Friends_Post_FriendId] foreign key ([FriendId]) references [dbo].[Friends] ([FriendId]);*/
