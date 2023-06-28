@@ -13,7 +13,7 @@ namespace SocialNetwork.DAL.Interfaces
 
         Post? GetSinglePost(Guid id);
 
-        Post AddSinglePost(DateTime postDate, string postText, string postPhoto, int postLikes, int postComments); 
+        Post AddSinglePost(Guid userId, DateTime postDate, string postText, string postPhoto, int postLikes, int postComments); 
         
         Post? UpdateSinglePost(Guid postId, DateTime postDate, string postText, string postPhoto, int postLikes, int postComments); 
 

@@ -11,13 +11,13 @@ namespace SocialNetwork.BLL.Interfaces
     {
         IEnumerable<CommentDTO> GetComments();
 
-        CommentDTO GetComment(int id);
+        CommentDTO GetComment(Guid id);
 
-        CommentDTO AddComment(CommentDTO commentDTO); // mozda sve pojedinacno
+        CommentDTO AddComment(String text, DateTime vrijemeObjave, Guid postID, Guid userID, int brojLajkova); // mozda sve pojedinacno
 
-        CommentDTO UpdateComment(CommentDTO commentDTO); // mozda sve pojedinacno
+        CommentDTO? UpdateComment(Guid commentID, String text, DateTime vrijemeObjave, Guid postID, Guid userID, int brojLajkova); // mozda sve pojedinacno
 
-        CommentDTO DeleteComment(int id);
+        CommentDTO? DeleteComment(Guid id);
 
     }
 }

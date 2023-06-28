@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SocialNetwork.BLL.Data;
 using SocialNetwork.BLL.Interfaces;
 
@@ -8,6 +9,7 @@ namespace SocialNetwork.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class PostController : ControllerBase
     {
 
@@ -34,9 +36,9 @@ namespace SocialNetwork.Controllers
 
         // POST api/<PostController> postPost
         [HttpPost]
-        public PostDTO Post(DateTime postDate, string postText, string postPhoto, int postLikes, int postComments)
+        public PostDTO Post(Guid userId, DateTime postDate, string postText, string postPhoto, int postLikes, int postComments)
         {
-            return _postService.AddPost(postDate, postText, postPhoto, postLikes, postComments);
+            return _postService.AddPost(userId, postDate, postText, postPhoto, postLikes, postComments);
         }
 
         // PUT api/<PostController>/5 fixPost

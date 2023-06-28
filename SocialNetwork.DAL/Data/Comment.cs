@@ -12,5 +12,8 @@ namespace SocialNetwork.DAL.Data
         public string CommentText { get; set; } = string.Empty;
         public DateTime CommentDate { get; set; }
         public int NumberOfLikes { get; set; }
+        public Guid PostId { get; set; }
+        public Guid UserId { get; set; }
+
     }
 }

@@ -9,14 +9,14 @@ namespace SocialNetwork.DAL.Interfaces
 {
     public interface ICommentRepository
     {
-        IEnumerable<Comment> GetAllComments();
+        public IEnumerable<Comment> GetAllComments();
 
-        Comment GetSingleComment(int id);
+        public Comment? GetSingleComment(Guid id);
 
-        Comment AddSingleComment(Comment commentDTO); // mozda sve pojedinacno
+        public Comment AddSingleComment(String text, DateTime vrijemeObjave, Guid postID, Guid userID, int brojLajkova);
 
-        Comment UpdateComment(Comment commentDTO); // mozda sve pojedinacno
+        public Comment? UpdateSingleComment(Guid commentID, String text, DateTime vrijemeObjave, Guid postID, Guid userID, int brojLajkova);
 
-        Comment DeleteSingleComment(int id);
+        public Comment? DeleteSingleComment(Guid id);
     }
 }

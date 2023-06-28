@@ -34,9 +34,9 @@ namespace SocialNetwork.BLL.Services
             return _mapper.Map<PostDTO>(post);
         }
 
-        public PostDTO AddPost(DateTime postDate, string postText, string postPhoto, int postLikes, int postComments)
+        public PostDTO AddPost(Guid userId, DateTime postDate, string postText, string postPhoto, int postLikes, int postComments)
         {
-            Post? post = _postRepository.AddSinglePost(postDate, postText, postPhoto, postLikes, postComments);
+            Post? post = _postRepository.AddSinglePost(userId, postDate, postText, postPhoto, postLikes, postComments);
             return _mapper.Map<PostDTO>(post);
         }
 

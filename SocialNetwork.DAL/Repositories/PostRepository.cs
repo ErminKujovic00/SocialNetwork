@@ -28,7 +28,7 @@ namespace SocialNetwork.DAL.Repositories
             return _dbContext.Post.Where(x => x.PostId == id).FirstOrDefault();
         }
 
-        public Post AddSinglePost(DateTime postDate, string postText, string postPhoto, int postLikes, int postComments)
+        public Post AddSinglePost(Guid userId, DateTime postDate, string postText, string postPhoto, int postLikes, int postComments)
         {
             Post post = new Post { 
                 PostId = new Guid(),
@@ -36,7 +36,7 @@ namespace SocialNetwork.DAL.Repositories
                 PostPhoto = postPhoto,
                 PostLikes = postLikes,
                 PostComments = postComments,
-                UserId = new Guid("91B3D935-B5E9-4CC5-BC95-FDB89E1F84F7") //mora bit neki pravi user
+                UserId = userId //mora bit neki pravi user
             };
             _dbContext.Post.Add(post);
             _dbContext.SaveChanges();

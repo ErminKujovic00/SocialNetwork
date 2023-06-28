@@ -13,7 +13,7 @@ namespace SocialNetwork.BLL.Interfaces
 
         PostDTO GetPost(Guid id);
 
-        PostDTO AddPost(DateTime postDate, string postText, string postPhoto, int postLikes, int postComments); // mozda sve pojedinacno
+        PostDTO AddPost(Guid userId, DateTime postDate, string postText, string postPhoto, int postLikes, int postComments); // mozda sve pojedinacno
 
         //mozda dodati kolonu kao updateDate
         PostDTO? UpdatePost(Guid postId, DateTime postDate, string postText, string postPhoto, int postLikes, int postComments); // mozda sve pojedinacno

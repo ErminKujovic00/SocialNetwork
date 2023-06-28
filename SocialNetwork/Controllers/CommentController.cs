@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using SocialNetwork.BLL.Data;
+using SocialNetwork.BLL.Interfaces;
+using SocialNetwork.BLL.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -6,45 +10,56 @@ namespace SocialNetwork.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CommentController : ControllerBase
     {
+        private readonly ICommentService _commentService;
+
+        public CommentController(ICommentService commentService)
+        {
+            _commentService = commentService;
+        }
+
+
         // GET: api/<CommentController> getAllComments
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<CommentDTO> GetComments()
         {
-            return new string[] { "value1", "value2" };
+            return _commentService.GetComments();
         }
 
         // GET api/<CommentController>/5 getComment
         [HttpGet("{id}")]
-        public string Get(int id)
+        public CommentDTO Get(Guid id)
         {
-            return "value";
+            return _commentService.GetComment(id);
         }
 
         // POST api/<CommentController> postComment
         [HttpPost]
-        public void Post([FromBody] string value)
+        public CommentDTO Post(string text, DateTime vrijemeObjave, Guid postID, Guid userID, int brojLajkova)
         {
+            return _commentService.AddComment(text, vrijemeObjave, postID, userID, brojLajkova);
         }
 
         // PUT api/<CommentController>/5 fixComment
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public CommentDTO? Put(Guid CommentId, string text, DateTime vrijemeObjave, Guid postID, Guid userID, int brojLajkova)
         {
+            return _commentService.UpdateComment(CommentId, text, vrijemeObjave, postID, userID, brojLajkova);
         }
 
 
         // DELETE api/<CommentController>/5 deleteAllComments
         [HttpDelete]
-        public void DeleteAll(int id)
+        public CommentDTO? Delete(Guid id)
         {
-        }
-
-        // DELETE api/<CommentController>/5 deletSingleComment
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            CommentDTO? deletedComment = _commentService.DeleteComment(id);
+            if (deletedComment == null)
+            {
+                throw new Exception();
+            }
+            return deletedComment;
         }
     }
 }
