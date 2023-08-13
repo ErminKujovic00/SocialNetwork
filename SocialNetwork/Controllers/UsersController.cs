@@ -10,7 +10,7 @@ namespace SocialNetwork.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    
     public class UsersController : ControllerBase
     {
 
@@ -21,7 +21,8 @@ namespace SocialNetwork.Controllers
         }
 
         // GET: api/<UsersController> getAllUsers
-        [HttpGet] 
+        [HttpGet]
+        [Authorize]
         public IEnumerable<UserDTO> GetAllUsers()
         {
             return _userService.GetUsers();
@@ -29,6 +30,7 @@ namespace SocialNetwork.Controllers
 
         // GET api/<UsersController>/5 getSingleUser
         [HttpGet("{id}")]
+        [Authorize]
         public UserDTO Get(Guid id)
         {
             return _userService.GetUser(id);
@@ -36,13 +38,14 @@ namespace SocialNetwork.Controllers
 
         // POST api/<UsersController> postUser
         [HttpPost]
-        public UserDTO Post(string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber)
+        public UserDTO Post(string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber, string password)
         {
-            return _userService.AddUser(firstName,lastName, userEmail, username, age, gender, adress, phoneNumber);
+            return _userService.AddUser(firstName,lastName, userEmail, username, age, gender, adress, phoneNumber, password);
         }
 
         // PUT api/<UsersController>/5 editUserProfile
         [HttpPut("{id}")]
+        [Authorize]
         public UserDTO? Put(Guid id, string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber)
         {
             if(_userService.UpdateUser(id, firstName, lastName, userEmail, username, age, gender, adress, phoneNumber) == null)
@@ -54,6 +57,7 @@ namespace SocialNetwork.Controllers
 
         // DELETE api/<UsersController>/5 deleteSingleUser
         [HttpDelete("{id}")]
+        [Authorize]
         public UserDTO? Delete(Guid id)
         {
             if(_userService.RemoveUser(id) == null)

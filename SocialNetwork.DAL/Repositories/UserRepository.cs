@@ -6,16 +6,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Security.Cryptography;
 
 namespace SocialNetwork.DAL.Repositories
 {
     public class UserRepository : IUserRepository
     {
         private readonly SocialNetworkDBContext _dbContext;
+        private readonly IAuthenticationRepository _authenticationRepository;
 
-        public UserRepository(SocialNetworkDBContext dbContext)
+        public UserRepository(SocialNetworkDBContext dbContext, IAuthenticationRepository authenticationRepository)
         {
             _dbContext = dbContext;
+            _authenticationRepository = authenticationRepository;
         }
 
         public IEnumerable<User> GetAllUser()
@@ -29,8 +32,12 @@ namespace SocialNetwork.DAL.Repositories
             return _dbContext.User.Where(x => x.UserId == id).FirstOrDefault();
         }
 
-        public User AddNewUser(string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber)   
+        public User AddNewUser(string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber, string password)   
         {
+            if (!_authenticationRepository.DoesUserExist(userEmail)) throw new Exception("User already exists");
+
+            CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
+
             User newUser = new User
             {
                 UserId = new Guid(),
@@ -41,11 +48,13 @@ namespace SocialNetwork.DAL.Repositories
                 Age = age,
                 Gender = gender,
                 Adress = adress,
-                PhoneNumber = phoneNumber
+                PhoneNumber = phoneNumber,
+                PasswordHash = passwordHash,
+                PasswordSalt = passwordSalt
             };
             _dbContext.User.Add(newUser);
             _dbContext.SaveChanges();
-            return  newUser;
+            return newUser;
         }
 
         public User? UpdateSingleUser(Guid userId, string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber)
@@ -96,6 +105,24 @@ namespace SocialNetwork.DAL.Repositories
             }
 
             return removeUser;
+        }
+
+        private static void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
+        {
+            var hmac = new HMACSHA512();
+
+            passwordSalt = hmac.Key;
+            passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+
+        }
+
+        private static bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
+        {
+            var hmac = new HMACSHA512(passwordSalt);
+
+            var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+            return computedHash.SequenceEqual(passwordHash);
+
         }
 
     }

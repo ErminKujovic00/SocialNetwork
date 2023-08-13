@@ -3,6 +3,8 @@
 -- Table dbo.Post
 -- Table dbo.Post
 -- Table dbo.Post
+-- Table dbo.Post
+-- Table dbo.Post
 create table
 	[dbo].[Post]
 (
@@ -20,6 +22,8 @@ constraint [Pk_Post_PostId] primary key clustered
 )
 );
 GO
+-- Relationship Fk_User_Post_UserId
+-- Relationship Fk_User_Post_UserId
 -- Relationship Fk_User_Post_UserId
 -- Relationship Fk_User_Post_UserId
 -- Relationship Fk_User_Post_UserId

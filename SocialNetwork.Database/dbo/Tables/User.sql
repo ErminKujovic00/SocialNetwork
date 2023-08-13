@@ -3,6 +3,8 @@
 -- Table dbo.User
 -- Table dbo.User
 -- Table dbo.User
+-- Table dbo.User
+-- Table dbo.User
 create table
 	[dbo].[User]
 (
@@ -13,7 +15,7 @@ create table
 	, [Username] nvarchar(100) not null
 	, [Age] int not null
 	, [Gender] nvarchar(50) not null
-	, [Adress] nvarchar(100) not null
+	, [Adress] nvarchar(200) not null
 	, [PasswordHash] varbinary(max) not null
 	, [PhoneNumber] nvarchar(100) not null
 	, [PasswordSalt] varbinary(max) not null

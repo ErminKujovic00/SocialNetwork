@@ -12,7 +12,7 @@ namespace SocialNetwork.DAL.Interfaces
         IEnumerable<User> GetAllUser();
         User? GetSingleUser(Guid id);
 
-        User AddNewUser(string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber); //mozda sve pojedinacno
+        User AddNewUser(string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber, string password); //mozda sve pojedinacno
 
         User? UpdateSingleUser(Guid userId, string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber); //mozda sve pojedinacno
 

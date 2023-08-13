@@ -22,6 +22,7 @@ namespace SocialNetwork.AutoMapperProfile
 
             CreateMap<Post, PostDTO>();
             CreateMap<Comment, CommentDTO>();
+            CreateMap<Notification, NotificationDTO>();
         }
     }
 }
