@@ -1,0 +1,17 @@
+11/08/2023 14:37:58	This log contains information about the import operation of the script 'SocialNetworkDDL.sql' into project 'SocialNetwork.Database' on computer 'DESKTOP-4JBBUD5' by user'ermin.
+11/08/2023 14:37:58	Started importing file: C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetworkDDL.sql 
+11/08/2023 14:37:59	File name C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetworkDDL.sql (size: 2805)
+11/08/2023 14:37:59	Parsing import script
+11/08/2023 14:37:59	Total number of batches in script: 1
+11/08/2023 14:37:59	Total number of statements in script: 7
+11/08/2023 14:37:59	The script was successfully imported into the project.
+11/08/2023 14:37:59	Analyzing schema objects...
+11/08/2023 14:37:59	Scanning project for duplicate elements
+11/08/2023 14:37:59	Element 'Comment' was merged into the existing script: 'C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.Database\dbo\Tables\Comment.sql'.
+11/08/2023 14:37:59	Element 'Post' was merged into the existing script: 'C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.Database\dbo\Tables\Posts.sql'.
+11/08/2023 14:37:59	Element 'User' was merged into the existing script: 'C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.Database\dbo\Tables\User.sql'.
+11/08/2023 14:37:59	Element 'Fk_Post_Comment_PostId' was merged into the existing script: 'C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.Database\dbo\Tables\Comment.sql'.
+11/08/2023 14:37:59	Element 'Fk_User_Post_UserId' was merged into the existing script: 'C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.Database\dbo\Tables\Posts.sql'.
+11/08/2023 14:37:59	Finished duplicate element processing
+11/08/2023 14:37:59	A summary of the import was saved to the following location: C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.Database\Import Script Logs\SocialNetworkDDL_sql_20230811123758.log
+11/08/2023 14:37:59	Click Finish to continue...

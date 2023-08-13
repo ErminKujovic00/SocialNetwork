@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SocialNetwork.BLL.Data;
 using SocialNetwork.BLL.Interfaces;
 
@@ -9,6 +10,7 @@ namespace SocialNetwork.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class UsersController : ControllerBase
     {
 
@@ -17,36 +19,52 @@ namespace SocialNetwork.Controllers
         {
             _userService = userService;
         }
-        // GET: api/<UsersController>
+
+        // GET: api/<UsersController> getAllUsers
         [HttpGet]
+        [Authorize]
         public IEnumerable<UserDTO> GetAllUsers()
         {
             return _userService.GetUsers();
         }
 
-      /*  // GET api/<UsersController>/5
+        // GET api/<UsersController>/5 getSingleUser
         [HttpGet("{id}")]
-        public string Get(int id)
+        [Authorize]
+        public UserDTO Get(Guid id)
         {
-            return "value";
+            return _userService.GetUser(id);
         }
 
-        // POST api/<UsersController>
+        // POST api/<UsersController> postUser
         [HttpPost]
-        public void Post([FromBody] string value)
+        public UserDTO Post(string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber, string password)
         {
+            return _userService.AddUser(firstName,lastName, userEmail, username, age, gender, adress, phoneNumber, password);
         }
 
-        // PUT api/<UsersController>/5
+        // PUT api/<UsersController>/5 editUserProfile
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [Authorize]
+        public UserDTO? Put(Guid id, string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber)
         {
+            if(_userService.UpdateUser(id, firstName, lastName, userEmail, username, age, gender, adress, phoneNumber) == null)
+            {
+                throw new Exception();
+            }
+            return _userService.UpdateUser(id, firstName, lastName, userEmail, username, age, gender, adress, phoneNumber);
         }
 
-        // DELETE api/<UsersController>/5
+        // DELETE api/<UsersController>/5 deleteSingleUser
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        [Authorize]
+        public UserDTO? Delete(Guid id)
         {
-        }*/
+            if(_userService.RemoveUser(id) == null)
+            {
+                throw new Exception();
+            }
+            return _userService.RemoveUser(id);
+        }
     }
 }

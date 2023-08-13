@@ -1,0 +1,20 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Post].[FriendId] is being dropped, data loss could occur.
+
+** User actions
+     Drop
+       [dbo].[Fk_Friends_Post_FriendId] (Foreign Key)
+     Alter
+       [dbo].[Post] (Table)
+
+** Supporting actions
+
+The column [dbo].[Post].[FriendId] is being dropped, data loss could occur.
+
