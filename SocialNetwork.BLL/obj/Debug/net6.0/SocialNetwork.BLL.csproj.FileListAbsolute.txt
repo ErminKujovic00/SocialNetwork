@@ -340,3 +340,9 @@ C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.
 C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\SocialNetwork.BLL.pdb
 C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\SocialNetwork.BLL.genruntimeconfig.cache
 C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.BLL\obj\Debug\net6.0\ref\SocialNetwork.BLL.dll
+C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.BLL\bin\Debug\net6.0\Microsoft.AspNetCore.Cors.dll
+C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.BLL\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.BLL\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.BLL\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.BLL\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\ermin\Desktop\Projekat2\SocialNetwork\SocialNetwork.BLL\bin\Debug\net6.0\Microsoft.Net.Http.Headers.dll
