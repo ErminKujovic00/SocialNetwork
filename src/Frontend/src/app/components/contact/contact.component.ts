@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { EmailSenderService } from 'src/app/services/email-sender.service';
+import { EmailSenderService } from 'src/app/services/emailSenderService/email-sender.service';
 
 @Component({
   selector: 'app-contact',
@@ -14,6 +14,8 @@ export class ContactComponent implements OnInit {
   email: string = "";
   message: string = "";
   @Input() visibility: string;
+  @Input() color: string;
+  @Input() text: string;
 
   alertLabel = document.getElementById('alert');
 
@@ -35,14 +37,39 @@ export class ContactComponent implements OnInit {
     }
     
     this.emailSenderService.postEmail(name, subject, email, message).subscribe({
-      next: (v) => console.log(v),
-      error: (e) => {console.log(e); alert("Failure")},
+      next: (v) => {
+        console.log(v)
+      },
+      error: (e) => {
+        //console.log(e); 
+        //alert("Failure");
+        this.visibility = 'block';
+        this.color = 'lightcoral';
+        this.text = "Failure!";
+      },
       complete: () => {
-        console.info('complete'); 
+       // console.info('complete'); 
         //alert("Message has successfully been sent.");
         this.visibility = 'block';
+        this.color = 'lightgreen';
+        this.text = "Success!";
     }
     });
+
+   /* this.emailSenderService.postEmail(name, subject, email, message).subscribe( response => {
+      // Access the status code
+      //console.log(response.status);
+      if(response.status == 200){
+        this.visibility = 'block';
+        this.color = 'lightgreen';
+        this.text = "Success!";
+      } else {
+        this.visibility = 'block';
+        this.color = 'lightred';
+        this.text = "Failure!";
+      }
+    });*/
+
     this.name = '';
     this.subject = '';
     this.email = '';
