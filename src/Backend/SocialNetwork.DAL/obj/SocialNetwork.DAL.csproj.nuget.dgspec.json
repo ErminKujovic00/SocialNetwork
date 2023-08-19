@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj": {}
+    "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj": {
+    "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj",
         "projectName": "SocialNetwork.DAL",
-        "projectPath": "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj",
+        "projectPath": "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj",
         "packagesPath": "C:\\Users\\ermin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.DAL\\obj\\",
+        "outputPath": "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

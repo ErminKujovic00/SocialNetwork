@@ -53,14 +53,17 @@ namespace SocialNetwork.BLL.Services
             _authenticationRepository.LogOutUser(user);
         }
 
-        public void RegisterUser(UserRegisterDTO user)
+        public Boolean RegisterUser(UserRegisterDTO user)
         {
-            if (!_authenticationRepository.DoesUserExist(user.UserEmail)) throw new Exception("User already exists");
-
+            if (!_authenticationRepository.DoesUserExist(user.UserEmail))
+            {
+                return false;
+                //throw new Exception("User already exists");
+            }
 
             CreatePasswordHash(user.Password, out byte[] passwordHash, out byte[] passwordSalt);
 
-            _authenticationRepository.RegisterUser(user.FirstName, user.LastName, user.UserEmail, user.Username, user.Age, user.Gender, user.Adress, user.PhoneNumber, passwordHash, passwordSalt);
+            return _authenticationRepository.RegisterUser(user.FirstName, user.LastName, user.UserEmail, user.Username, user.Age, user.Gender, user.Adress, user.PhoneNumber, passwordHash, passwordSalt);
         }
 
         private static void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)

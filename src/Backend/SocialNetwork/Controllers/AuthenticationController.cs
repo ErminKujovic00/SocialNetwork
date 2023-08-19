@@ -20,12 +20,18 @@ namespace SocialNetwork.Controllers
 
         // GET: api/<AuthenticationController>
         [HttpPost]
-        public void RegisterUser(UserRegisterDTO user)
+        public IActionResult RegisterUser(UserRegisterDTO user)
         {
             if (user == null || string.IsNullOrWhiteSpace(user.UserEmail) || string.IsNullOrWhiteSpace(user.Password))
-                throw new Exception("Invalid request parameters");
-
-            _authenticationService.RegisterUser(user);
+            {
+                return BadRequest("Invalid request parameters");
+                //throw new Exception("Invalid request parameters");
+            }
+            if (_authenticationService.RegisterUser(user) == false) 
+            {
+                return StatusCode(409, "A user with the provided email address already exists. Please use a different email or log in to your existing account.");
+            }
+            return Ok("Your account has been successfully created.");
         }
 
         [HttpPost]

@@ -4,19 +4,21 @@
 
 			<div class="signup">
 				<form>
-					<label for="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="txt" placeholder="User name" required="">
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<app-button text="Sign up" (btnClick)="apiSignUpCall()"></app-button>
+					<label for="chk" aria-hidden="true" class="signupLabel">Sign up</label>
+					<input type="text" name="fullname" [(ngModel)] = "fullname" placeholder="Full name" required="" class="signupInput">
+					<input type="text" name="username" [(ngModel)] = "username" placeholder="User name" required="" class="signupInput">
+					<input type="email" name="email" [(ngModel)] = "email" placeholder="Email" required="" class="signupInput">
+					<input type="password" name="pswd" [(ngModel)] = "pswd" placeholder="Password" required="" class="signupInput">
+					<input type="password" name="pswdReenter" [(ngModel)] = "pswdReenter" placeholder="Re-enter password" required="" class="signupInput">
+					<app-button text="Sign up" (btnClick)="apiSignUpCall(fullname, username, email, pswd, pswdReenter)"></app-button>
 				</form>
 			</div>
 
 			<div class="login">
 				<form>
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
+					<label for="chk" aria-hidden="true" class="loginLabel">Login</label>
+					<input type="email" name="email" placeholder="Email" required="" class="loginInput">
+					<input type="password" name="pswd" placeholder="Password" required="" class="loginInput">
 					<app-button text="Login" (btnClick)="apiLoginCall()"></app-button>
 				</form>
 			</div>

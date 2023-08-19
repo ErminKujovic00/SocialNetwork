@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oxbANEH8juquhVOH7vXd+5tySUs5frBNZcmTRdxlqr1hsPcHfVfe16qtBHHz24zXz2uYBq+uU2P8+RJu0PTYAg==",
+  "dgSpecHash": "8BetSbfVAniwBoXgwc26u++mQdVPe9Ua/tklQqMIajRUlXBMxvPIPpbC18wwj/Mzp72u5qGRdqaDkxZ9DGx8oQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj",
+  "projectFilePath": "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ermin\\.nuget\\packages\\autofixture\\4.18.0\\autofixture.4.18.0.nupkg.sha512",
     "C:\\Users\\ermin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

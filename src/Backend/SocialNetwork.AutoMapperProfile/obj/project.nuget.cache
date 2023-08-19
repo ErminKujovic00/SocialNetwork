@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nMXqsreLQrDDcZ4cqvirKnQjTTZf3SqNELUFfAMNzVi9GFP3IDXMn8FEpMj2PrVCZdXsYgYCspbebf4t1f/0HA==",
+  "dgSpecHash": "aieTmV1h7LtTuLk6PuVTiwxAhQxYgdCD4pLkA8czpESiDtyaqheB7/NPVJ/nZAbVJbrThFVaE3s1/qKnWB0WDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.AutoMapperProfile\\SocialNetwork.AutoMapperProfile.csproj",
+  "projectFilePath": "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.AutoMapperProfile\\SocialNetwork.AutoMapperProfile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ermin\\.nuget\\packages\\autofixture\\4.18.0\\autofixture.4.18.0.nupkg.sha512",
     "C:\\Users\\ermin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",

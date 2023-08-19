@@ -8994,11 +8994,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork\\SocialNetwork.csproj",
+      "projectUniqueName": "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork\\SocialNetwork.csproj",
       "projectName": "SocialNetwork",
-      "projectPath": "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork\\SocialNetwork.csproj",
+      "projectPath": "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork\\SocialNetwork.csproj",
       "packagesPath": "C:\\Users\\ermin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork\\obj\\",
+      "outputPath": "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9021,14 +9021,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.AutoMapperProfile\\SocialNetwork.AutoMapperProfile.csproj": {
-              "projectPath": "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.AutoMapperProfile\\SocialNetwork.AutoMapperProfile.csproj"
+            "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.AutoMapperProfile\\SocialNetwork.AutoMapperProfile.csproj": {
+              "projectPath": "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.AutoMapperProfile\\SocialNetwork.AutoMapperProfile.csproj"
             },
-            "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.BLL\\SocialNetwork.BLL.csproj": {
-              "projectPath": "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.BLL\\SocialNetwork.BLL.csproj"
+            "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.BLL\\SocialNetwork.BLL.csproj": {
+              "projectPath": "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.BLL\\SocialNetwork.BLL.csproj"
             },
-            "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj": {
-              "projectPath": "C:\\Users\\ermin\\Desktop\\Projekat2\\SocialNetwork\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj"
+            "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj": {
+              "projectPath": "C:\\Users\\ermin\\Desktop\\Projekat3\\SocialNetwork\\src\\Backend\\SocialNetwork.DAL\\SocialNetwork.DAL.csproj"
             }
           }
         }

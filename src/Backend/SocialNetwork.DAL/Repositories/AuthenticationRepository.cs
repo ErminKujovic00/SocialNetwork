@@ -48,7 +48,7 @@ namespace SocialNetwork.DAL.Repositories
             _dbContext.SaveChanges();
         }
 
-        public void RegisterUser(string firstName, string lastName, string email, string username, int age, string gender, string adress, string phoneNumber, byte[] passwordHash, byte[] passwordSalt)
+        public Boolean RegisterUser(string firstName, string lastName, string email, string username, int age, string gender, string adress, string phoneNumber, byte[] passwordHash, byte[] passwordSalt)
         {
             User user = new User
             {
@@ -67,6 +67,7 @@ namespace SocialNetwork.DAL.Repositories
 
             _dbContext.User.Add(user);
             _dbContext.SaveChanges();
+            return true;
         }
     }
 }
