@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "strictPropertyInitialization": false, //dodao sam ovo da se ne moraju uvijek inicijalizirati
+    "strictPropertyInitialization": false, //dodao sam ovo da se ne moraju varijable uvijek inicijalizirati
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
