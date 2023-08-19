@@ -36,22 +36,26 @@ namespace SocialNetwork.Controllers
 
         [HttpPost]
         [Route("api/login")]
-        public string LoginUser(UserDTO user)
+        public IActionResult LoginUser(UserDTO user)
         {
             if (user == null || string.IsNullOrWhiteSpace(user.UserEmail) || string.IsNullOrWhiteSpace(user.Password))
-                throw new Exception("Invalid request parameters");
+            {
+                return BadRequest("Invalid request parameters");
+            }
 
-            return _authenticationService.LoginUser(user);
+            return Ok(_authenticationService.LoginUser(user));
         }
 
         [HttpPost]
         [Route("api/logout")]
-        public void LogoutUser([FromBody] string jwt)
+        public IActionResult LogoutUser([FromBody] string jwt)
         {
             if (string.IsNullOrWhiteSpace(jwt))
-                throw new Exception("Invalid request parameters");
-
+            {
+                return BadRequest("Invalid request parameters");
+            }
             _authenticationService.LogoutUser(jwt);
+            return Ok("User has been successfully logged out.");
         }
     }
 }
