@@ -12,6 +12,10 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import {MatIconModule} from '@angular/material/icon';
+import { PostCardComponent } from './components/post-card/post-card.component';
+import { CommentComponent } from './components/comment/comment.component';
+import { AddCommentComponent } from './components/add-comment/add-comment.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +26,17 @@ import { FormsModule } from '@angular/forms';
     ButtonComponent,
     AboutComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    PostCardComponent,
+    CommentComponent,
+    AddCommentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

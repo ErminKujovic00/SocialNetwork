@@ -20,6 +20,7 @@ namespace SocialNetwork.Controllers
         public async void Post(string name, string subject, string mail, string message)
         {
             await _emailSenderService.sendEmailAsync(name, subject, mail, message);
+           // return Ok(message);
         }
 
         // GET: api/<EmailSenderController>

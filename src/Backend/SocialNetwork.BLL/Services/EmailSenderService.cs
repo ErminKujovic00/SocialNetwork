@@ -26,7 +26,7 @@ namespace SocialNetwork.BLL.Services
             /*
              * Pošaljem mail sam sebi sa user mailom u subject u slučaju da treba da ih kontaktiram.
              */
-            return client.SendMailAsync( 
+            return client.SendMailAsync(  //treba skontat kako obezbijedit u slucaju neuspjeha
                 new MailMessage(from: mail,
                                 to: mail,
                                 subject + " " + email,

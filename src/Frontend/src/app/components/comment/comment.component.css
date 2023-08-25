@@ -1,0 +1,38 @@
+.comment{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(210, 215, 221);
+    border-radius: 15px;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    width: fit-content;
+}
+
+.accountIcon{
+    width: 5%;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.accountName{
+    font-size: 0.7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
+}
+
+.commentText{
+    padding: 5px;
+}
+
+.textLabel{
+    font-size: 0.9vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

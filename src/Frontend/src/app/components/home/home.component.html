@@ -1,1 +1,42 @@
-<p>Radi home</p>
+<div class="wrapper">
+    <div class="sidebar">
+        <nav class="menubar">
+            <!--
+                <img src="https://www.scoliosis-rehabilitation.com/mymedia/2016/06/no-face.png">  
+                <label class="accountName">Jhon Doe</label>
+            -->
+            <ul class="category">
+                <li class="categoryLi">
+                    <img src="https://www.scoliosis-rehabilitation.com/mymedia/2016/06/no-face.png">  
+                    <label class="accountName">Ermin Kujović</label>
+                </li>
+                <li class="categoryLi">
+                    <label class="categoryDesc"><mat-icon>home</mat-icon> Home</label>
+                </li>
+                <li class="categoryLi">
+                    <label class="categoryDesc"><mat-icon>favorite_border</mat-icon> Food</label>
+                </li>
+                <li class="categoryLi">
+                    <label class="categoryDesc"><mat-icon>motorcycle</mat-icon> Motorcycle</label>
+                </li>
+                <li class="categoryLi">
+                    <label class="categoryDesc"><mat-icon>pets</mat-icon> Pets</label>
+                </li>
+                <li class="categoryLi">
+                    <label class="categoryDesc"><mat-icon>explicit</mat-icon> Explicit</label>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="search__container">
+            <input class="search__input" type="text" placeholder="Search">
+        </div>
+        <div>
+        <!--<div *ngFor="let data of cardDataArray">
+                <app-post-card *ngFor="let item of data.commentsArray"></app-post-card>
+            </div>-->
+            <app-post-card *ngFor="let data of cardDataArray" [cardData]="data"></app-post-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="addContainer">
+    <form (ngSubmit)="submitComment()">
+        <input id="comment" [(ngModel)]="newComment.commentText" name="comment" placeholder="Add a comment..." class="inputField">
+        <button type="submit" class="submitButton"><mat-icon>send</mat-icon></button>
+    </form>
+</div>
