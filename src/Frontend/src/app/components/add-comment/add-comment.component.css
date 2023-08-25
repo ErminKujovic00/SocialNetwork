@@ -1,0 +1,41 @@
+.addContainer{
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    text-align: left;
+}
+
+.inputField{
+    margin-left: 2%;
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 2vh;
+    resize: none;
+    width: 70%;
+    background-color: rgb(240, 243, 243);
+    text-align: left;
+}
+
+.submitButton{
+    margin-left: 3%;
+    /*margin-right: 10px;*/
+    background-color: #BCCE98;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 2% 4%;
+    cursor: pointer;
+    vertical-align: middle;
+    width: 7vh;
+}
+
+.submitButton:hover {
+    background-color: darkgreen;
+}
+
+mat-icon{
+    font-size: 1.5vw;
+}

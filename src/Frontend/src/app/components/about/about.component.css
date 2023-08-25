@@ -5,6 +5,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+body{
+    height: 80vh;
+}
+
 .about-us{
     /*height: 100vh; minimalna velicina ali vece nego moj ekran pa prede footer*/
     width: 100%;

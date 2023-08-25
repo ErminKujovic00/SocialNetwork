@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="post">
+    <div class="account">
+      <img src="https://www.scoliosis-rehabilitation.com/mymedia/2016/06/no-face.png" class="accountIcon">  
+      <div>
+        <label class="accountName">Ermin Kujovic</label>
+      </div>
+    </div>
+    <div class="card_post">
+      <img src="https://statusneo.com/wp-content/uploads/2023/02/MicrosoftTeams-image551ad57e01403f080a9df51975ac40b6efba82553c323a742b42b1c71c1e45f1.jpg" class="post_img"  alt="brown couch" />
+      <div class="post_text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus facere cum unde ducimus ab,
+        recusandae suscipit assumenda id aut officia, cumque dolore optio maiores illum nesciunt incidunt? Distinctio, id harum.
+      </div>
+    </div>
+  </div>
+  <div class="card_comments">
+    <div class="commentsTitleDiv">
+      <label class="commentsTitle">Comments</label>
+    </div>
+    <div class="commentContainer">
+      <app-comment *ngFor="let data of commentDataArray" [commentData]="data"></app-comment>
+    </div>
+    <div class="addCommentCont">
+      <app-add-comment></app-add-comment>
+    </div>
+  </div>
+</div>
