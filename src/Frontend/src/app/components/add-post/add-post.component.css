@@ -1,0 +1,76 @@
+.post{
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.textInput{
+    width: 95%;
+    border-radius: var(--border-radius-primary);
+    box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px 28px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    resize: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.labelPost{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgInput{
+    background-color: bisque;
+    width: 30%;
+    height: 1.5vw;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload{
+    margin-left: 10px;
+    font-size: 1.4vw;
+    color: rgb(36, 189, 189);
+}
+
+.custom-file-upload:hover{
+    cursor: pointer;
+}
+
+mat-icon{
+    vertical-align: text-bottom;
+}
+
+.postButton{
+    padding:8px 12px;
+    font-family:'Montserrat',sans-serif;
+    background: #017b01;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    transition:all .3s;
+    margin-right: 10px;
+}
+
+.postButton:hover{
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    color:#fff
+}
+
+
+::ng-deep .custom-toast-class{
+    background-color: red;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    
+    /* Add more styles here */
+}
