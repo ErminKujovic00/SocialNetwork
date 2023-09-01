@@ -1,0 +1,12 @@
+<div class="post">
+    <textarea class="textInput" [(ngModel)]="postText" placeholder="Share your thoughts..."></textarea>
+    <div class="labelPost">
+        <label class="custom-file-upload">
+            <mat-icon>attachment</mat-icon>
+            <input type="file"/>
+            Upload
+        </label>
+        <!--<input class="imgInput" type="file" (change)="onFileSelected($event)">-->
+        <button class="postButton" (click)="sharePost()">Post</button>
+    </div>
+</div>
