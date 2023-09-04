@@ -25,7 +25,7 @@ namespace SocialNetwork.DAL.Data
         public string LastName { get; set; } = string.Empty;
         public string Username { get; set; } = string.Empty;
         public string UserEmail { get; set; } = string.Empty;
-        public int Age { get; set; }
+        public int? Age { get; set; }
         public string Gender { get; set; } = string.Empty;
         public string Adress { get; set; } = string.Empty;
         public string PhoneNumber { get; set; } = string.Empty;

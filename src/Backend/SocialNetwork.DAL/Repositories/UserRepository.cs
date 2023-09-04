@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
+using System.ComponentModel.DataAnnotations;
 
 namespace SocialNetwork.DAL.Repositories
 {
@@ -32,11 +33,16 @@ namespace SocialNetwork.DAL.Repositories
             return _dbContext.User.Where(x => x.UserId == id).FirstOrDefault();
         }
 
-        public User AddNewUser(string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber, string password)   
+        public User AddNewUser([Required] string firstName, [Required] string lastName, [Required] string userEmail, [Required] string username, int? age, string? gender, string? adress, string? phoneNumber, [Required] string password)   
         {
             if (!_authenticationRepository.DoesUserExist(userEmail)) throw new Exception("User already exists");
 
             CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
+
+            if(age == null) { age = 0;}
+            if(gender == null) { gender = "null"; }
+            if(adress == null) {  adress = "null"; }
+            if(phoneNumber == null) {  phoneNumber = "null"; }
 
             User newUser = new User
             {
