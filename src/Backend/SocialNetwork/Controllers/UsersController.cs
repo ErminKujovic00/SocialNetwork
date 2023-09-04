@@ -37,10 +37,16 @@ namespace SocialNetwork.Controllers
         }
 
         // POST api/<UsersController> postUser
-        [HttpPost]
-        public UserDTO Post(string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber, string password)
+        /*[HttpPost]
+        public UserDTO Post(string firstName, string lastName, string userEmail, string username, string password, int? age, string? gender, string? adress = null, string? phoneNumber = null)
         {
             return _userService.AddUser(firstName,lastName, userEmail, username, age, gender, adress, phoneNumber, password);
+        }*/
+
+        [HttpPost]
+        public UserDTO Post(UserSignUpDTO user)
+        {
+            return _userService.AddUser(user.FirstName, user.LastName, user.UserEmail, user.Username, user.Age, user.Gender, user.Adress, user.PhoneNumber, user.Password);
         }
 
         // PUT api/<UsersController>/5 editUserProfile

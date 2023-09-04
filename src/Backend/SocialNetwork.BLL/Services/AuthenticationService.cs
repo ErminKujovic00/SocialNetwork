@@ -30,7 +30,7 @@ namespace SocialNetwork.BLL.Services
                 _mapper = mapper;
                 _config = config;
             }
-        public string LoginUser(UserDTO user)
+        public string LoginUser(UserLoginDTO user /*UserDTO user*/ )
         {
             var foundUser = _authenticationRepository.GetUser(user.UserEmail);
             if (foundUser == null) throw new Exception("Wrong credentials");

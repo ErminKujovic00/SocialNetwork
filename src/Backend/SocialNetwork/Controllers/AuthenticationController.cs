@@ -36,7 +36,7 @@ namespace SocialNetwork.Controllers
 
         [HttpPost]
         [Route("api/login")]
-        public IActionResult LoginUser(UserDTO user)
+        public IActionResult LoginUser(UserLoginDTO user /*UserDTO user*/ )
         {
             if (user == null || string.IsNullOrWhiteSpace(user.UserEmail) || string.IsNullOrWhiteSpace(user.Password))
             {

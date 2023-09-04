@@ -10,7 +10,7 @@ namespace SocialNetwork.BLL.Interfaces
     public interface IAuthenticationService
     {
         Boolean RegisterUser(UserRegisterDTO user);
-        string LoginUser(UserDTO user);
+        string LoginUser(UserLoginDTO user /*UserDTO user*/);
         void LogoutUser(string jwt);
     }
 }

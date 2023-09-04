@@ -8,7 +8,7 @@ namespace SocialNetwork.BLL.Data
 {
     public class UserRegisterDTO
     {
-        public Guid UserId { get; set; }
+      //  public Guid UserId { get; set; }
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public string Username { get; set; } = string.Empty;
