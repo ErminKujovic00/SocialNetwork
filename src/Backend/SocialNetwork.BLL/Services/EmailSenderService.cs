@@ -16,7 +16,7 @@ namespace SocialNetwork.BLL.Services
         {
 
             var mail = "erminkujovic@hotmail.com";
-            var pw = "pinkilinki123";
+            var pw = "trebaStavitPravuSifru";
 
             var client = new SmtpClient("smtp-mail.outlook.com", 587)
             {
