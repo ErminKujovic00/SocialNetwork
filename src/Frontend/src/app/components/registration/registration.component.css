@@ -83,6 +83,7 @@ button:hover{
 	transition: .8s ease-in-out;
 }
 .login label{
+	padding-top: 10px;
 	color: #017b01;
 	transform: scale(.6);
 }
@@ -94,5 +95,19 @@ button:hover{
 	transform: scale(1);	
 }
 #chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+
+/* Shown when 'chk' is checked */
+.login.checked {
+	transform: translateY(-550px);
+}
+
+/* Shown when 'chk' is checked */
+.login.checked label {
+	transform: scale(1);
+}
+/* Shown when 'chk' is checked */
+.signup.checked label {
 	transform: scale(.6);
 }

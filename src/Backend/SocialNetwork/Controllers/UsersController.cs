@@ -44,9 +44,15 @@ namespace SocialNetwork.Controllers
         }*/
 
         [HttpPost]
-        public UserDTO Post(UserSignUpDTO user)
+        //public UserDTO Post(UserSignUpDTO user)
+        public IActionResult Post(UserSignUpDTO user)
         {
-            return _userService.AddUser(user.FirstName, user.LastName, user.UserEmail, user.Username, user.Age, user.Gender, user.Adress, user.PhoneNumber, user.Password);
+            UserDTO? userDTO = _userService.AddUser(user.FirstName, user.LastName, user.UserEmail, user.Username, user.Age, user.Gender, user.Adress, user.PhoneNumber, user.Password);
+            if(userDTO == null)
+            {
+                return StatusCode(409, "A user with the provided email address already exists. Please use a different email or log in to your existing account.");
+            }
+            return Ok(userDTO);
         }
 
         // PUT api/<UsersController>/5 editUserProfile

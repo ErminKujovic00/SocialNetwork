@@ -19,6 +19,7 @@ import { AddCommentComponent } from './components/add-comment/add-comment.compon
 import { AddPostComponent } from './components/add-post/add-post.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule  } from 'ngx-toastr';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { ToastrModule  } from 'ngx-toastr';
       // Add more options here
     })
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

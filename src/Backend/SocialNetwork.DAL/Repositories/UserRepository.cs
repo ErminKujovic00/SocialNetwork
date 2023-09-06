@@ -33,13 +33,13 @@ namespace SocialNetwork.DAL.Repositories
             return _dbContext.User.Where(x => x.UserId == id).FirstOrDefault();
         }
 
-        public User AddNewUser([Required] string firstName, [Required] string lastName, [Required] string userEmail, [Required] string username, int? age, string? gender, string? adress, string? phoneNumber, [Required] string password)   
+        public User? AddNewUser([Required] string firstName, [Required] string lastName, [Required] string userEmail, [Required] string username, int? age, string? gender, string? adress, string? phoneNumber, [Required] string password)   
         {
-            if (!_authenticationRepository.DoesUserExist(userEmail)) throw new Exception("User already exists");
+            if (!_authenticationRepository.DoesUserExist(userEmail)) return null;// throw new Exception("User already exists");
 
             CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
 
-            if(age == null) { age = 0;}
+            age ??= 0;
             if(gender == null) { gender = "null"; }
             if(adress == null) {  adress = "null"; }
             if(phoneNumber == null) {  phoneNumber = "null"; }

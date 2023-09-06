@@ -35,7 +35,7 @@ namespace SocialNetwork.Controllers
         }
 
         [HttpPost]
-        [Route("api/login")]
+        [Route("login")]
         public IActionResult LoginUser(UserLoginDTO user /*UserDTO user*/ )
         {
             if (user == null || string.IsNullOrWhiteSpace(user.UserEmail) || string.IsNullOrWhiteSpace(user.Password))
@@ -47,7 +47,7 @@ namespace SocialNetwork.Controllers
         }
 
         [HttpPost]
-        [Route("api/logout")]
+        [Route("logout")]
         public IActionResult LogoutUser([FromBody] string jwt)
         {
             if (string.IsNullOrWhiteSpace(jwt))

@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { User } from 'src/app/data/UserSignUp';
 import axios, { AxiosResponse } from 'axios';
 
@@ -8,15 +7,13 @@ import axios, { AxiosResponse } from 'axios';
 })
 export class SignUpService {
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
   url = 'https://localhost:7297/api/Users';
 
 
   signUpUser(firstName: string, lastName: string, username: string, email: string, password: string): Promise<AxiosResponse<any>>{
-    const header = new HttpHeaders().set('content-type', 'application/json').set('Access-Control-Allow-Origin', '*');
-    console.log(firstName + lastName + username + email + password);
-
+    //const header = new HttpHeaders().set('content-type', 'application/json').set('Access-Control-Allow-Origin', '*');
     const user: User = {
       firstName: firstName,
       lastName: lastName,
@@ -28,15 +25,9 @@ export class SignUpService {
     return axios.post(this.url, user, {
         headers: {
           "Content-Type": "application/json", // Set the content type to JSON
+          'Access-Control-Allow-Origin': '*'
         },
       });
-      /*.then((response) => {
-        console.log("Sign up completed!");
-        //console.log("Response data:", response.data);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });*/
 
     //const params = new HttpParams().set('firstName', firstName).set('lastName', lastName).set('username', username).set('userEmail', email).set('password', password);
     //console.log(JSON.stringify(user));

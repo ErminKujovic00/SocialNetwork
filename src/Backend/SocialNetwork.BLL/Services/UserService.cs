@@ -59,7 +59,7 @@ namespace SocialNetwork.BLL.Services
             return _mapper.Map<UserDTO>(user);
         }
 
-        public UserDTO AddUser(string firstName, string lastName, string userEmail, string username, int? age, string? gender, string? adress, string? phoneNumber, string password)
+        public UserDTO? AddUser(string firstName, string lastName, string userEmail, string username, int? age, string? gender, string? adress, string? phoneNumber, string password)
         {
             User? user = _userRepository.AddNewUser(firstName, lastName, userEmail, username, age, gender, adress, phoneNumber, password);
             return _mapper.Map<UserDTO>(user);
