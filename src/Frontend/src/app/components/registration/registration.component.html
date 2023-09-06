@@ -2,7 +2,7 @@
 	<div class="main">  	
 		<input type="checkbox" id="chk" aria-hidden="true">
 
-			<div class="signup">
+			<div class="signup" [ngClass]="{ 'checked': isChecked }">
 				<form>
 					<label for="chk" aria-hidden="true" class="signupLabel">Sign up</label>
 					<input type="text" name="fullname" [(ngModel)] = "fullname" placeholder="Full name" required="" class="signupInput">
@@ -14,11 +14,11 @@
 				</form>
 			</div>
 
-			<div class="login">
+			<div class="login" [ngClass]="{ 'checked': isChecked }">
 				<form>
 					<label for="chk" aria-hidden="true" class="loginLabel">Login</label>
-					<input type="email" name="email" placeholder="Email" required="" class="loginInput">
-					<input type="password" name="pswd" placeholder="Password" required="" class="loginInput">
+					<input type="email" name="email" [(ngModel)]= "loginEmail" placeholder="Email" required="" class="loginInput">
+					<input type="password" name="pswd" [(ngModel)]= "loginPassword" placeholder="Password" required="" class="loginInput">
 					<app-button text="Login" (btnClick)="apiLoginCall()"></app-button>
 				</form>
 			</div>

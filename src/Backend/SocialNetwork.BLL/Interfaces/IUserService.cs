@@ -13,7 +13,7 @@ namespace SocialNetwork.BLL.Interfaces
 
         UserDTO GetUser(Guid id);
 
-        UserDTO AddUser(string firstName, string lastName, string userEmail, string username, int? age, string? gender, string? adress, string? phoneNumber, string password); //mozda sve pojedinacno
+        UserDTO? AddUser(string firstName, string lastName, string userEmail, string username, int? age, string? gender, string? adress, string? phoneNumber, string password); //mozda sve pojedinacno
 
         UserDTO? UpdateUser(Guid userId, string firstName, string lastName, string userEmail, string username, int age, string gender, string adress, string phoneNumber); //mozda sve pojedinacno
 
